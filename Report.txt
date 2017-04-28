@@ -1,16 +1,5 @@
-1. Steps:
 -------------------------------
-1. Created big.txt from all html files in NBCNews folder using apache Tika.
-2. Provided big.txt file as an input to Norvig SpellCorrector.php program.
-3. Made necessary changes in solrconfig.xml that is setting the suggestion count to 5 and creating requestHandler for suggest functionality.
-4. Passed the query words entered by user to SpellCorrector.php program and in the case of conflicts displayed the message of "Showing results 
-for X instead of Y" where Y was user query and X was returned result by SpellCorrector.php program.
-5. Used default AJAX autocomplete functionality for autocomplete-Called proxy.php file which fetched JSON results returning 5 suggestions for a user entered query.
-6. Converted html page data to text for snippet generation using simple_html_dom.php.
-7. Text data was then split on full stops and later based on individual query terms for getting first match sentence for the user query.
-
--------------------------------
-2. Analysis of the results:
+Analysis of the results:
 -------------------------------
 
 5 examples of corrections: 

@@ -106,9 +106,7 @@ $(document).ready(function() {
 <body>
 <form  accept-charset="utf-8" method="get">
 <div align="center">
-<div class="ui-widget">
-  <input type="text" id="search" name="search" value="<?php echo htmlspecialchars($query, ENT_QUOTES, 'utf-8'); ?>"/>
-</div>
+<input type="text" id="search" name="search" value="<?php echo htmlspecialchars($query, ENT_QUOTES, 'utf-8'); ?>"/>
 <input type="radio" name="choice" value="lucene" <?php if(isset($_GET['choice'])&&$_GET['choice']=="lucene") echo "checked";?>>Lucene
 <input type="radio" name="choice" value="pagerank" <?php if(isset($_GET['choice'])&&$_GET['choice']=="pagerank") echo "checked";?> >PageRank
 <input type="submit" value="Search" id="go"/>
